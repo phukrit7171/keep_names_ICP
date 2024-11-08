@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "keep_names_react_backend": {
+      "main": "src/keep_names_react_backend/main.mo",
+      "type": "motoko"
+    },
+    "keep_names_react_frontend": {
+      "dependencies": [
+        "keep_names_react_backend"
+      ],
+      "source": [
+        "src/keep_names_react_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "keep_names_react_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
